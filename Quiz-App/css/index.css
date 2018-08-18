@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Marcellus SC', serif;
+    font-weight: bold;
+  }
+  
+body {
+    background: url("http://getwallpapers.com/wallpaper/full/6/a/0/24980.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+header {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    font-size: 35px;
+    color: #f2ca27;
+  }
+ 
+h2 {
+    color: #f2ca27;
+}  
+
+.logo img {
+    width: 100px;
+    height: 150px;
+    padding: 20px;
+  }
+  
+header li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+    color: #f2ca27;
+  }
+  
+.startPage {
+    text-align: center;
+    padding: 10px;
+  }
+
+.startPage button {
+    margin: 40px;
+    padding: 10px;
+    font-size: 40px;
+    color: #f2ca27;
+    background: #326f97;
+  }
+
+.startPage button:hover {
+    color: #326f97;
+  }
+
+.submitButton {
+    margin: 20px;
+    font-size: 30px;
+    color: #f2ca27;
+    background: rgba(76, 175, 80, 0.1);
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.submitButton:hover {
+    color: white;
+}
+
+.nextButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+    background: rgba(76, 175, 80, 0.1);
+    color: #f2ca27;
+  }
+
+.nextButton:hover {
+      color: #326f97;
+  }
+  
+.startPage h2 {
+    color: lightgray;
+  }
+  
+fieldset {
+    padding: 10px;
+    color: #f2ca27;
+    text-align: center;
+  }
+  
+label {
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+  
+.question-page h2 {
+    color: #f2ca27;
+    text-align: center;
+}
+
+#status-bar {
+    text-align: center;
+}
+
+#status-bar span {
+    font-size: 25px;
+    color: #f2ca27;
+    padding: 20px;
+}
+  
+.feedback-page h2 {
+    text-align: center;
+  }
+  
+.feedback-page img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: 3px solid white;
+  }
+  
+
+.restartButton {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    padding: 10px;
+    background: rgba(76, 175, 80, 0.1);
+    color: #f2ca27;
+}
+
+.restartButton:hover {
+    color: #326f97;
+}
+
+.final-page h2 {
+    text-align: center;
+    font-size: 30px;
+}
