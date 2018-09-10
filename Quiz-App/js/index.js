@@ -109,30 +109,31 @@ const questions = [
 
 function generateQuestion(correctAnswers, question, questionsAnswered) {
   return `
-    <div class="question-page" role="main">
+    <div class="question-page">
     <h2 id="question">${questions[questionNum].question}</h2>
     
     <form>
       <fieldset>
-        <label>
-          <input class="answer" type="radio" value="${questions[questionNum].answer1}" name="option" checked></input>
-          <span>${questions[questionNum].answer1}</span>
-        </label>
+        <legend>Answers</legend>
+          <label>
+            <input class="answer" type="radio" value="${questions[questionNum].answer1}" name="option" checked></input>
+            <span>${questions[questionNum].answer1}</span>
+          </label>
   
-        <label>
-          <input class="answer" type="radio" value="${questions[questionNum].answer2}" name="option"></input>
-          <span>${questions[questionNum].answer2}</span>
-        </label>
+          <label>
+            <input class="answer" type="radio" value="${questions[questionNum].answer2}" name="option"></input>
+            <span>${questions[questionNum].answer2}</span>
+          </label>
   
-        <label>
-          <input class="answer" type="radio" value="${questions[questionNum].answer3}" name="option"></input>
-          <span>${questions[questionNum].answer3}</span>
-        </label>
+          <label>
+            <input class="answer" type="radio" value="${questions[questionNum].answer3}" name="option"></input>
+            <span>${questions[questionNum].answer3}</span>
+          </label>
   
-        <label>
-          <input class="answer" type="radio" value="${questions[questionNum].answer4}" name="option"></input>
-          <span>${questions[questionNum].answer4}</span>
-        </label>
+          <label>
+            <input class="answer" type="radio" value="${questions[questionNum].answer4}" name="option"></input>
+            <span>${questions[questionNum].answer4}</span>
+          </label>
       </fieldset>  
       <button class="submitButton">Submit</button>
 
@@ -211,7 +212,7 @@ function nextQuestion() {
 }
 
 const correctFeedback = `
-  <section class="feedback-page" role="main">
+  <section class="feedback-page">
     <h2>Great Job! You're answer is Correct!</h2>
     <img src="https://media.giphy.com/media/zGnnFpOB1OjMQ/giphy.gif" alt="hobbits applauding">
     <button type="button" class="nextButton">Next</button>
@@ -230,7 +231,7 @@ function generateIncorrectFeedback() {
 
 function incorrectFeedbackTemplate(questionNum) {
   return `
-    <section class="feedback-page" role="main">
+    <section class="feedback-page">
       <h2>Sorry, you're answer was incorrect. The correct answer was ${questions[questionNum].answer}!</h2>
       <img src="https://i0.wp.com/gifrific.com/wp-content/uploads/2017/11/you-shall-not-pass-gandalf-lotr.gif?ssl=1" alt="Gandalf stopping you from crossing the bridge">
       <button type="button" class="nextButton">Next</button>
